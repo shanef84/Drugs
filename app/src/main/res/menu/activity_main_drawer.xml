@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/med_link"
+            android:icon="@drawable/pill"
+            android:title="Medicines" />
+        <item
+            android:id="@+id/search_link"
+            android:icon="@drawable/search"
+            android:title="Search" />
+        <item
+            android:id="@+id/news_link"
+            android:icon="@drawable/news"
+            android:title="News" />
+        <item
+            android:id="@+id/reports_link"
+            android:icon="@drawable/report"
+            android:title="Submit Report" />
+        <item
+            android:id="@+id/web_link"
+            android:icon="@drawable/web"
+            android:title="Website" />
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/twitter_link"
+                android:icon="@drawable/twitter"
+                android:title="Twitter" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "48734836078",
+    "firebase_url": "https://drugs-8763b.firebaseio.com",
+    "project_id": "drugs-8763b",
+    "storage_bucket": "drugs-8763b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48734836078:android:c9184f314b547a2c",
+        "android_client_info": {
+          "package_name": "forbes.drugs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48734836078-gect39aebemla04f4gpr9h9ds5s8uamh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "forbes.drugs",
+            "certificate_hash": "a3787b8109acd45376cab1eb18d5fc03de5f8601"
+          }
+        },
+        {
+          "client_id": "48734836078-car1tg0n5u4t4rmcbtomq11vt3r3qc3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXda_KV4TsA-n12PNR2sar-tEhN8wv9pI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48734836078-car1tg0n5u4t4rmcbtomq11vt3r3qc3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
