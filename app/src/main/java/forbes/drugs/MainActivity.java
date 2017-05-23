@@ -2,6 +2,7 @@ package forbes.drugs;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +23,7 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends BaseActivity
         implements  NavigationView.OnNavigationItemSelectedListener,
                     AdapterView.OnItemClickListener {
 
@@ -112,6 +113,9 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            // User chose the "Settings" item, show the app settings UI...
+            Intent intent_set = new Intent(this, SettingsActivity.class);
+            startActivity(intent_set);
             return true;
         }
 
@@ -125,17 +129,31 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.med_link) {
-            // Handle the med action
+            // User chose the "Medicines" item, show the app settings UI...
+            Intent intent_set = new Intent(this, MedicinesActivity.class);
+            startActivity(intent_set);
         } else if (id == R.id.search_link) {
-
+            // User chose the "Search" item, show the app settings UI...
+            Intent intent_set = new Intent(this, SearchActivity.class);
+            startActivity(intent_set);
         } else if (id == R.id.reports_link) {
-
+            // User chose the "Reports" item, show the app settings UI...
+            Intent intent_set = new Intent(this, ReportsActivity.class);
+            startActivity(intent_set);
+        } else if (id == R.id.news_link) {
+            //User chose the "News" item, switch to twitter app...
+            Intent intent_hpra = new Intent(this, NewsActivity.class);
+            startActivity(intent_hpra);
         } else if (id == R.id.web_link) {
-
+            //User chose the "HPRAWeb" item, switch to twitter app...
+            Intent intent_hpra = new Intent(this, HPRAWebActivity.class);
+            startActivity(intent_hpra);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.twitter_link) {
-
+            //User chose the "Twitter" item, switch to twitter app...
+            Intent intent_twit = new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?user_id=780795318778470400"));
+            startActivity(intent_twit);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
